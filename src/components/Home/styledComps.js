@@ -22,6 +22,16 @@ export const Item = styled.div`
   padding: 0.2rem;
 `;
 
+export const FormGroup = styled(Item)`
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+`;
+
 export const Tabs = styled.div`
   display: flex;
   flex-direction: row;
