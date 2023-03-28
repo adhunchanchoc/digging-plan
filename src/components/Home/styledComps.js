@@ -37,4 +37,12 @@ export const TabBtn = styled.button`
   font-weight: bold;
   width: 100%;
   height: 45px;
+  cursor: pointer;
+  background-color: ${(props) => {
+    if (props.value === props.active) {
+      return "greenyellow;font-weight: 800;";
+    } else {
+      return "beige";
+    }
+  }};
 `;

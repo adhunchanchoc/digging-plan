@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import importedEmployees from "../../data/employees.json";
 import { PageWrap, List, Item, Tabs, TabBtn } from "./styledComps";
 
 export default function Home() {
@@ -8,14 +9,18 @@ export default function Home() {
     console.log("switched to", event.target.value);
     setActiveTab(event.target.value);
   };
+
+  const [employees, setEmployees] = useState(importedEmployees);
+  // console.table(employees);
+
   return (
     <>
       <PageWrap>
         <Tabs>
-          <TabBtn onClick={switchTab} value="employees">
+          <TabBtn onClick={switchTab} value="employees" active={activeTab}>
             Zamestnanci
           </TabBtn>
-          <TabBtn onClick={switchTab} value="tasks">
+          <TabBtn onClick={switchTab} value="tasks" active={activeTab}>
             Zadane ukoly
           </TabBtn>
         </Tabs>
@@ -23,9 +28,11 @@ export default function Home() {
           <>
             <h3>Zamestnanci</h3>
             <List>
-              <Item>kop</Item>
-              <Item>kop</Item>
-              <Item>kop</Item>
+              {employees.map((em) => (
+                <Item key={em.id}>
+                  {em.name} - {em.male ? "muz" : "zena"}
+                </Item>
+              ))}
             </List>
           </>
         )}
