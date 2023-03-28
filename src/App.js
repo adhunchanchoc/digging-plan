@@ -7,11 +7,10 @@ function App() {
   return (
     // <div className="App">
     //     <Home />
-
     // </div>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element="Home" />
+        <Route index element={<Home />} />
       </Route>
     </Routes>
   );
