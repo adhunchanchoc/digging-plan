@@ -5,7 +5,7 @@ export const PageWrap = styled.div`
   flex-direction: column;
   /* align-items: space-between; */
   /* text-align: center; */
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
   max-width: 700px;
   margin: 0 auto;
 `;
@@ -17,9 +17,27 @@ export const List = styled.div`
 export const Item = styled.div`
   color: grey;
   display: block;
-  border: 1px red solid;
   font-size: 20px;
   padding: 0.2rem;
+  border: 1px black solid;
+`;
+
+// kopie
+export const DeleteBtn = styled.div`
+  display: inline-block;
+  position: relative;
+  z-index: 50;
+  color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 80%;
+  margin: 0;
+  margin-left: 5px;
+  vertical-align: baseline;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  cursor: pointer;
 `;
 
 export const FormGroup = styled(Item)`
@@ -28,8 +46,10 @@ export const FormGroup = styled(Item)`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-left: 50px;
-  padding-right: 50px;
+  align-content: center;
+  align-items: baseline;
+  padding-left: 35px;
+  padding-right: 35px;
 `;
 
 export const Tabs = styled.div`
