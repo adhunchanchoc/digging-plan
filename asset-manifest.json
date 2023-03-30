@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/digging-plan/static/css/main.d41a02d0.css",
+    "main.js": "/digging-plan/static/js/main.b66377df.js",
+    "static/js/787.7da96258.chunk.js": "/digging-plan/static/js/787.7da96258.chunk.js",
+    "index.html": "/digging-plan/index.html",
+    "main.d41a02d0.css.map": "/digging-plan/static/css/main.d41a02d0.css.map",
+    "main.b66377df.js.map": "/digging-plan/static/js/main.b66377df.js.map",
+    "787.7da96258.chunk.js.map": "/digging-plan/static/js/787.7da96258.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d41a02d0.css",
+    "static/js/main.b66377df.js"
+  ]
+}
